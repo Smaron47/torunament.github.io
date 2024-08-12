@@ -1,0 +1,148 @@
+/* General styling for the page */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #0e1217;
+  color: #e3e8ef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.input-section {
+  width: 100%;
+  margin-bottom: 40px;
+  background: #232c36;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-section input,
+.input-section textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #182026;
+  color: #e3e8ef;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  gap: 25px;
+  margin-left: 20px; /* Add space between the textarea and buttons */
+}
+
+.button-group button {
+  background: #f5379b;
+  color: #232c36;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.button-group button:hover {
+  background: #f5379b;
+}
+
+.bracket {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px;
+  background: #313338;
+  border-radius: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: -90px;
+}
+
+.match {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 12px 0;
+}
+
+
+.round-header-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.round-header {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: flex;
+  background: #182026;
+  color: #e3e8ef;
+  border: 2px solid #36404e;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.team.selected {
+  background: #f5379b;
+  color: #232c36;
+}
+
+
+.warningMessage {
+  color: #f00;
+  font-weight: bold;
+}
+
+.winner {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #f5379b;
+}
+
+/* Flexbox container to align textarea and buttons side by side */
+.textarea-button-group {
+  display: flex;
+  align-items: flex-start;
+}
+
+
